@@ -271,91 +271,91 @@
   width: 1px;
   height: var(--flowappz-virtual-size);
 }
-:root {
-  --flowappz-navigation-size: 44px;
-  /*
-      --flowappz-navigation-top-offset: 50%;
-      --flowappz-navigation-sides-offset: 10px;
-      --flowappz-navigation-color: var(--flowappz-theme-color);
-      */
-}
-.flowappz-button-prev,
-.flowappz-button-next {
-  position: absolute;
-  top: var(--flowappz-navigation-top-offset, 50%);
-  width: calc(var(--flowappz-navigation-size) / 44 * 27);
-  height: var(--flowappz-navigation-size);
-  margin-top: calc(0px - (var(--flowappz-navigation-size) / 2));
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--flowappz-navigation-color, var(--flowappz-theme-color));
-}
-.flowappz-button-prev.flowappz-button-disabled,
-.flowappz-button-next.flowappz-button-disabled {
-  opacity: 0.35;
-  cursor: auto;
-  pointer-events: none;
-}
-.flowappz-button-prev.flowappz-button-hidden,
-.flowappz-button-next.flowappz-button-hidden {
-  opacity: 0;
-  cursor: auto;
-  pointer-events: none;
-}
-.flowappz-navigation-disabled .flowappz-button-prev,
-.flowappz-navigation-disabled .flowappz-button-next {
-  display: none !important;
-}
-.flowappz-button-prev svg,
-.flowappz-button-next svg {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform-origin: center;
-}
-.flowappz-rtl .flowappz-button-prev svg,
-.flowappz-rtl .flowappz-button-next svg {
-  transform: rotate(180deg);
-}
-.flowappz-button-prev,
-.flowappz-rtl .flowappz-button-next {
-  left: var(--flowappz-navigation-sides-offset, 10px);
-  right: auto;
-}
-.flowappz-button-next,
-.flowappz-rtl .flowappz-button-prev {
-  right: var(--flowappz-navigation-sides-offset, 10px);
-  left: auto;
-}
-.flowappz-button-lock {
-  display: none;
-}
-/* Navigation font start */
-.flowappz-button-prev:after,
-.flowappz-button-next:after {
-  font-family: flowappz-icons;
-  font-size: var(--flowappz-navigation-size);
-  text-transform: none !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
-}
-.flowappz-button-prev:after,
-.flowappz-rtl .flowappz-button-next:after {
-  content: "prev";
-}
-.flowappz-button-next,
-.flowappz-rtl .flowappz-button-prev {
-  right: var(--flowappz-navigation-sides-offset, 10px);
-  left: auto;
-}
-.flowappz-button-next:after,
-.flowappz-rtl .flowappz-button-prev:after {
-  content: "next";
-}
+/*:root {*/
+/*  --flowappz-navigation-size: 44px;*/
+/*  !**/
+/*      --flowappz-navigation-top-offset: 50%;*/
+/*      --flowappz-navigation-sides-offset: 10px;*/
+/*      --flowappz-navigation-color: var(--flowappz-theme-color);*/
+/*      *!*/
+/*}*/
+/*.flowappz-button-prev,*/
+/*.flowappz-button-next {*/
+/*  position: absolute;*/
+/*  top: var(--flowappz-navigation-top-offset, 50%);*/
+/*  width: calc(var(--flowappz-navigation-size) / 44 * 27);*/
+/*  height: var(--flowappz-navigation-size);*/
+/*  margin-top: calc(0px - (var(--flowappz-navigation-size) / 2));*/
+/*  z-index: 10;*/
+/*  cursor: pointer;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  color: var(--flowappz-navigation-color, var(--flowappz-theme-color));*/
+/*}*/
+/*.flowappz-button-prev.flowappz-button-disabled,*/
+/*.flowappz-button-next.flowappz-button-disabled {*/
+/*  opacity: 0.35;*/
+/*  cursor: auto;*/
+/*  pointer-events: none;*/
+/*}*/
+/*.flowappz-button-prev.flowappz-button-hidden,*/
+/*.flowappz-button-next.flowappz-button-hidden {*/
+/*  opacity: 0;*/
+/*  cursor: auto;*/
+/*  pointer-events: none;*/
+/*}*/
+/*.flowappz-navigation-disabled .flowappz-button-prev,*/
+/*.flowappz-navigation-disabled .flowappz-button-next {*/
+/*  display: none !important;*/
+/*}*/
+/*.flowappz-button-prev svg,*/
+/*.flowappz-button-next svg {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  object-fit: contain;*/
+/*  transform-origin: center;*/
+/*}*/
+/*.flowappz-rtl .flowappz-button-prev svg,*/
+/*.flowappz-rtl .flowappz-button-next svg {*/
+/*  transform: rotate(180deg);*/
+/*}*/
+/*.flowappz-button-prev,*/
+/*.flowappz-rtl .flowappz-button-next {*/
+/*  left: var(--flowappz-navigation-sides-offset, 10px);*/
+/*  right: auto;*/
+/*}*/
+/*.flowappz-button-next,*/
+/*.flowappz-rtl .flowappz-button-prev {*/
+/*  right: var(--flowappz-navigation-sides-offset, 10px);*/
+/*  left: auto;*/
+/*}*/
+/*.flowappz-button-lock {*/
+/*  display: none;*/
+/*}*/
+/*!* Navigation font start *!*/
+/*.flowappz-button-prev:after,*/
+/*.flowappz-button-next:after {*/
+/*  font-family: flowappz-icons;*/
+/*  font-size: var(--flowappz-navigation-size);*/
+/*  text-transform: none !important;*/
+/*  letter-spacing: 0;*/
+/*  font-variant: initial;*/
+/*  line-height: 1;*/
+/*}*/
+/*.flowappz-button-prev:after,*/
+/*.flowappz-rtl .flowappz-button-next:after {*/
+/*  content: "prev";*/
+/*}*/
+/*.flowappz-button-next,*/
+/*.flowappz-rtl .flowappz-button-prev {*/
+/*  right: var(--flowappz-navigation-sides-offset, 10px);*/
+/*  left: auto;*/
+/*}*/
+/*.flowappz-button-next:after,*/
+/*.flowappz-rtl .flowappz-button-prev:after {*/
+/*  content: "next";*/
+/*}*/
 /* Navigation font end */
 :root {
   /*
