@@ -318,29 +318,29 @@
     height: var(--flowappz-virtual-size);
 }
 
-:root {
-    --flowappz-navigation-size: 44px;
+/*:root {*/
+/*    --flowappz-navigation-size: 44px;*/
 
-    --flowappz-navigation-top-offset: 50%;
-    --flowappz-navigation-sides-offset: 10px;
-    --flowappz-navigation-color: var(--flowappz-theme-color);
+/*    --flowappz-navigation-top-offset: 50%;*/
+/*    --flowappz-navigation-sides-offset: 10px;*/
+/*    --flowappz-navigation-color: var(--flowappz-theme-color);*/
 
-}
+/*}*/
 
-.flowappz-button-prev,
-.flowappz-button-next {
-    position: absolute;
-    top: var(--flowappz-navigation-top-offset, 50%);
-    width: calc(var(--flowappz-navigation-size) / 44 * 27);
-    height: var(--flowappz-navigation-size);
-    margin-top: calc(0px - (var(--flowappz-navigation-size) / 2));
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--flowappz-navigation-color, var(--flowappz-theme-color));
-}
+/*.flowappz-button-prev,*/
+/*.flowappz-button-next {*/
+/*    position: absolute;*/
+/*    top: var(--flowappz-navigation-top-offset, 50%);*/
+/*    width: calc(var(--flowappz-navigation-size) / 44 * 27);*/
+/*    height: var(--flowappz-navigation-size);*/
+/*    margin-top: calc(0px - (var(--flowappz-navigation-size) / 2));*/
+/*    z-index: 10;*/
+/*    cursor: pointer;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    color: var(--flowappz-navigation-color, var(--flowappz-theme-color));*/
+/*}*/
 
 /*.flowappz-button-prev.flowappz-button-disabled,*/
 /*.flowappz-button-next.flowappz-button-disabled {*/
